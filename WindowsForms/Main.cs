@@ -70,8 +70,13 @@ namespace WindowsForms
 
         private void btnAlarm(object sender, EventArgs e)
         {
-            Alarm btn = new Alarm();
-            btn.Show();
+            pictureviewer pictureviewer = new pictureviewer();
+            pictureviewer.TopLevel = false;
+            if (splitContainer1.Panel2.Controls.Count > 0)
+                splitContainer1.Panel2.Controls.Clear();
+            splitContainer1.Panel2.Controls.Add(pictureviewer);
+            pictureviewer.BringToFront();
+            pictureviewer.Show();
         }
 
         private void btnnotepad(object sender, EventArgs e)

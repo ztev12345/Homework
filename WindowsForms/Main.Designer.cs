@@ -35,7 +35,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnpictureviewer = new System.Windows.Forms.Button();
             this.btncalculator = new System.Windows.Forms.Button();
             this.btnpaint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -107,7 +107,7 @@
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.Controls.Add(this.button3);
-            this.splitContainer2.Panel1.Controls.Add(this.button2);
+            this.splitContainer2.Panel1.Controls.Add(this.btnpictureviewer);
             this.splitContainer2.Panel1.Controls.Add(this.btncalculator);
             this.splitContainer2.Panel1.Controls.Add(this.btnpaint);
             this.splitContainer2.Panel1.Controls.Add(this.button1);
@@ -131,15 +131,15 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnnotepad);
             // 
-            // button2
+            // btnpictureviewer
             // 
-            this.button2.Location = new System.Drawing.Point(122, 177);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 27);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "鬧鈴";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnAlarm);
+            this.btnpictureviewer.Location = new System.Drawing.Point(122, 177);
+            this.btnpictureviewer.Name = "btnpictureviewer";
+            this.btnpictureviewer.Size = new System.Drawing.Size(169, 27);
+            this.btnpictureviewer.TabIndex = 5;
+            this.btnpictureviewer.Text = "圖片顯示";
+            this.btnpictureviewer.UseVisualStyleBackColor = true;
+            this.btnpictureviewer.Click += new System.EventHandler(this.btnAlarm);
             // 
             // btncalculator
             // 
@@ -189,7 +189,7 @@
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Button btnpaint;
         private System.Windows.Forms.Button btncalculator;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnpictureviewer;
         private System.Windows.Forms.Button button3;
     }
 }
