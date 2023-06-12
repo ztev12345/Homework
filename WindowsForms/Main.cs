@@ -51,13 +51,23 @@ namespace WindowsForms
         private void btnpaint_Click(object sender, EventArgs e)
         {
             Paint paint = new Paint();
-            paint.Show();
             paint.TopLevel = false;
             if (splitContainer1.Panel2.Controls.Count > 0)
                 splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(paint);
             paint.BringToFront();
             paint.Show();
+        }
+
+        private void btncalculator_Click(object sender, EventArgs e)
+        {
+            Calculator calculator = new Calculator();
+            calculator.TopLevel = false;
+            if (splitContainer1.Panel2.Controls.Count > 0)
+                splitContainer1.Panel2.Controls.Clear();
+            splitContainer1.Panel2.Controls.Add(calculator);
+            calculator.BringToFront();
+            calculator.Show();
         }
     }
 }

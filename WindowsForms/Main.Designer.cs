@@ -35,6 +35,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.btnpaint = new System.Windows.Forms.Button();
+            this.btncalculator = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -103,6 +104,7 @@
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.Controls.Add(this.btncalculator);
             this.splitContainer2.Panel1.Controls.Add(this.btnpaint);
             this.splitContainer2.Panel1.Controls.Add(this.button1);
             this.splitContainer2.Panel1.Controls.Add(this.btnscreensaver);
@@ -124,6 +126,16 @@
             this.btnpaint.Text = "小畫家";
             this.btnpaint.UseVisualStyleBackColor = true;
             this.btnpaint.Click += new System.EventHandler(this.btnpaint_Click);
+            // 
+            // btncalculator
+            // 
+            this.btncalculator.Location = new System.Drawing.Point(122, 144);
+            this.btncalculator.Name = "btncalculator";
+            this.btncalculator.Size = new System.Drawing.Size(169, 27);
+            this.btncalculator.TabIndex = 4;
+            this.btncalculator.Text = "簡易計算機";
+            this.btncalculator.UseVisualStyleBackColor = true;
+            this.btncalculator.Click += new System.EventHandler(this.btncalculator_Click);
             // 
             // Main
             // 
@@ -152,6 +164,7 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Button btnpaint;
+        private System.Windows.Forms.Button btncalculator;
     }
 }
 
