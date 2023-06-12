@@ -19,12 +19,23 @@ namespace WindowsForms
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            labtime.Text = DateTime.Now.ToString("H : MM : ss");
+            labtime.Text = DateTime.Now.ToString("HH : mm : ss");
         }
 
         private void Alarm_Load(object sender, EventArgs e)
         {
             timer1.Start();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            timer2.Start();
+            lblstatus 
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
