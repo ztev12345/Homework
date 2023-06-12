@@ -74,10 +74,6 @@ namespace WindowsForms
             btn.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form1 btn = new Form1();
-            btn.Show();
-        }
+       
     }
 }
