@@ -30,7 +30,7 @@ namespace WindowsForms
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             timer2.Start();
-            lblstatus 
+            
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

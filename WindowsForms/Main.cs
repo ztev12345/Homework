@@ -68,12 +68,21 @@ namespace WindowsForms
             calculator.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnAlarm(object sender, EventArgs e)
         {
             Alarm btn = new Alarm();
             btn.Show();
         }
 
-       
+        private void btnnotepad(object sender, EventArgs e)
+        {
+            frmNotepad notepad = new frmNotepad();
+            notepad.TopLevel = false;
+            if (splitContainer1.Panel2.Controls.Count > 0)
+                splitContainer1.Panel2.Controls.Clear();
+            splitContainer1.Panel2.Controls.Add(notepad);
+            notepad.BringToFront();
+            notepad.Show();
+        }
     }
 }
