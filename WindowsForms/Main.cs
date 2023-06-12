@@ -20,8 +20,6 @@ namespace WindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Hello hello = new Hello();
-            //hello.Show();
             Hello f2 = new Hello();
             f2.TopLevel = false;
             if (splitContainer1.Panel2.Controls.Count > 0)
@@ -68,6 +66,12 @@ namespace WindowsForms
             splitContainer1.Panel2.Controls.Add(calculator);
             calculator.BringToFront();
             calculator.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Alarm btn = new Alarm();
+            btn.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
